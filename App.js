@@ -66,17 +66,22 @@ export default class App extends React.Component {
 		</View>
 		);
 	}
+	
+	/*pressCell(rowData){
+	  Alert.alert(rowData);
+  }*/
   render() {
 	
     return (
 	
   <View style={{flex:1 }}>
-      
+      //s<TouchableHighlight onPress={()=> this.pressCell(dataRow)}>
 		<StatusBar hidden/>
 		<ListView
 			dataSource = {this.state.dataSource}
 			renderRow={this._renderRow}
 		/>
+		//s<TouchableHighlight>
       </View>
     );
   }
